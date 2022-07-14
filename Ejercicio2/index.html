@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="encabezado">
+      <h1> freeCodeCamp Formulario</h1>
+      <p id="subtitulo">Gracias por ayudarnos a mejorar freCodeCamp</p>
+    </div>
+    <form>
+      <label> Nombre
+      <input type="text" placeholder="Introduce tu nombre" name="name"required/> </label>
+      <label> Email
+      <input type="email" placeholder="Introduce tu email" name="email" required/> </label>
+      <label> Edad (optional)
+      <input type="number" placeholder="Edad" name="age"/> </label>
+      <label>
+        ¿Qué opción describe mejor tu estado actual?
+        <select name="role" required>
+          <option disabled selected value> Selecciona tu estado actual</option>
+          <option value="Estudiante"> Estudiante</option>
+          <option value="jornada completa"> Trabajo a jornada completa</option>
+          <option value="media jornada"> Trabajo a media jornada</option>
+          <option value="sin respuesta"> Prefiero no contestar</option>
+          <option value="otro"> otro</option>
+        </select>
+        <div class="group">
+          <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+      <label>
+      <input type="radio" name="si" value="si">Si
+      </label>
+      <label>
+      <input type="radio" name="quizas" value="quizas">Quizás
+      </label>
+      <label>
+      <input type="radio" name="no" value="no">No estoy seguro
+      </label>
+      </div>
+      <div class="group">
+        <p> ¿Qué te gustaría ver mejorado? </p>
+        <label>
+        <input type="checkbox" name="Front-end" value="Front-end">Front-end
+        </label>
+        <label>
+        <input type="checkbox" name="Back-end" value="Back-end">Back-end
+        </label>
+        <label>
+        <input type="checkbox" name="Data-science" value="Data-Science">Data Science
+        </label>
+      </div>
+      <div>
+        <p> Comentarios y sugerencias</p>
+        <textarea placeholder="Escribe tu comentario..."></textarea>
+      </div>
+      <input id="enviar" type="submit">
+    </form>
+  </body>
