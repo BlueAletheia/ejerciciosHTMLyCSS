@@ -1,0 +1,82 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background: black;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    place-content: center flex-end;
+    background: rgba(76, 105, 129, 1);
+    width: 100%;
+    margin: -10px -10px;
+    padding: 0px 10px;
+}
+
+#nav-bar a:hover {
+    background-color: rgba(76, 105, 129, 1);
+    border-radius: 6px;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(76, 105, 129, 1) 0%, rgba(17, 17, 34, 1) 100%);
+    border-radius: 6px;
+    line-height: 8px;
+}
+
+#projects-text {
+    margin-top: 10px;
+    padding-top: 60px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(17, 17, 34, 1);
+    border-radius: 6px;
+}
+
+.project-card {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(76, 105, 129, 1);
+    margin: 20px;
+    border-radius: 6px;
+}
+
+
+.project-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
